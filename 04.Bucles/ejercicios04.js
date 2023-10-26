@@ -1,21 +1,28 @@
 function cantidadDeVocales(phrase){
 // Cuenta la cantidad de vocales en la frase pasada por parametros utilizando un bucle for
 // Tu código:👇
-
+let contador = 0;
+let pToLowercase = phrase.toLowerCase(); 
+for (let i = 0; i < phrase.length; i++)  
+  if (pToLowercase[i] === "a" || pToLowercase[i] === "e" || pToLowercase[i] === "i" || pToLowercase[i] === "o" || pToLowercase[i] === "u") { // Debes usar "===" en lugar de "=" para comparar y corregir la condición del if
+    contador++; 
+  }
 }
 
 function primerDivisible(divisor, dividendo) {
 // Encuentra el primer número divisible por 'num' a partir de un número dado utilizando un bucle while
 // Tu código:👇
-
-}
+       
+} while(divisor) 
 
 
 function encuentraX(x){
 //Realiza un algoritmo que recorre numeros del 1 al 100, cuando pase por el numero X pasado por parametros
 // retornar "El numero X es: ..."
 // Tu Código:👇
-
+    {for (let i = 1; i = 100; i++) 
+    if (i = x) return "El numnero X es: " + i 
+    }
 }
 
 function sumandoTodo(num){
