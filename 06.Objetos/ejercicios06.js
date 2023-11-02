@@ -2,8 +2,11 @@
 // Completa el siguiente objeto 'alumnos' que tenga como primera propiedad nombre, segunda propiedad apellido, tercera edad y cuarta examen
 // nombre y apellido deben tener como valor un string, edad un entero y examen un booleano.
 // Tu código:
-let alumnos = {}
+let alumnos = {
+    nombre : "Nicolas",
+    apellido : "Apiolaza"
 
+}
 
 function datosObj(obj){
     // Pasado el objeto por paramentros compuesto de la siguiente manera : 
@@ -11,6 +14,7 @@ function datosObj(obj){
     // obtener los valeres nombre y apellido y dar un mensaje de bienvenida 
     // 'Bienvenido Leonardo Avila' 
     // tu código aqui:
+    return "Bienvenido" + obj.nombre + "Leonardo" + obj.apellido;
 
 }
 
@@ -19,7 +23,22 @@ function cambiandoPropiedades(obj){
     //{ nombre: Pablo, apellido: Perez, edad: 25 }
     // Agregar una propiedad 'nacionalidad' con el valor de 'Argentina'
     // tu código aqui:
-
+    function cambiandoPropiedades(obj) {
+        // Verificar si el objeto no es nulo o indefinido
+        if (obj) {
+          // Agregar la propiedad 'nacionalidad' con el valor 'Argentina'
+          obj.nacionalidad = 'Argentina';
+        }
+        return obj; // Devolver el objeto con la nueva propiedad
+      }
+      
+      // Ejemplo de uso:
+      var persona = { nombre: 'Pablo', apellido: 'Perez', edad: 25 };
+      cambiandoPropiedades(persona);
+      
+      // Ahora el objeto persona tendrá una propiedad 'nacionalidad' con el valor 'Argentina'
+      console.log(persona);
+      
 }
 
 function eliminarPropiedad(objeto, propiedad) {
